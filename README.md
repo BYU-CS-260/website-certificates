@@ -124,7 +124,11 @@ Let's Encrypt now provides certificates to 200 million websites. And the vast ma
 
 ![https status](/images/https-status.png)
 
-We've made so much progress that Google has talked about [phasing out the lock icon](https://www.cnet.com/news/say-good-bye-to-that-green-secure-lock-on-google-chrome/), and instead showing "Not Secure" on websites without a certificate.
+We've made so much progress that Google has talked about [phasing out the lock icon](https://blog.chromium.org/2018/05/evolving-chromes-security-indicators.html), and instead showing "Not Secure" on websites without a certificate.
+
+![chrome-security-indicators](/images/chrome-security-indicators.png)
+
+![chrome-not-secure](/images/chrome-not-secure.png)
 
 ## Getting a certificate
 
@@ -132,7 +136,7 @@ Get a certificate is really easy. The EFF has created [Certbot](https://certbot.
 
 ![certbot](/images/certbot.png)
 
-Here are the [instructions for Nginx on Ubuntu 18.04](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx.html). In step 4, use the first command shown, which will automatically configure Nginx with a certificate for your Nginx websites.
+Here are the [instructions for Nginx on Ubuntu 18.04](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx.html). In step 4, use the first command shown, which will automatically configure Nginx with a certificate for all of your Nginx websites.
 
 ```
 sudo certbot -nginx
